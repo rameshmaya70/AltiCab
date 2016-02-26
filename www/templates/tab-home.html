@@ -1,0 +1,54 @@
+<ion-view >
+<div class="bar bar-header bar-dark">
+  
+  <h1 class="title">Dashboard</h1>
+  <button class="button icon ion-plus" ng-click = "showNewRequest()"></button>
+</div>
+  <ion-content>
+ <!--  <ion-list>
+
+  <ion-item class="item item-icon-left" ng-click = "showDetail($index)" ng-repeat = "history in histories">
+  <img src="{{history.img}}" style = "width:40px; height:auto;padding = 0;">
+   
+
+    <h2 style = "float:right;"> {{history.status}}</h2>
+    <br>
+    <p style = "float:right;">{{history.date}}</p>
+  </ion-item>
+
+  
+</ion-list> -->
+
+<div class="list card" ng-repeat = "history in histories">
+
+  <div class="item item-avatar" style = "background-color : #D2D5D6;">
+    <img src="{{history.img}}">
+    <h2><b>{{history.status}}</b></h2>
+    <p>{{history.date}}</p>
+  </div>
+
+  <div class="item item-body" style = "background-color : #ACADAD;">
+  <div class="row">
+  <div class="col col-25"><b>{{history.from}}</b></div>
+  <div class="col col-50">
+
+    <a href="#">
+      
+     </a>
+
+  </div>
+  <div class="col col-25"><b>{{history.to}}</b></div>
+</div>
+  </div>
+
+  <a class="item item-icon-right dark" href="#" ng-click = "showDetail($index)" style = "background-color : #D2D5D6;">
+   Show Detail
+   <i class="icon ion-arrow-right-a"></i>
+  </a>
+
+</div>
+
+  </ion-content>
+</ion-view>
+
+

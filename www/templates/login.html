@@ -1,0 +1,25 @@
+<ion-modal-view style="background-image:url(img/bg1.jpg); height:100vh; background-position:center top;">
+
+<div>
+
+</div>
+  
+  <ion-content>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <img style = "text-align: center"src="img/altiLogo.png">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
